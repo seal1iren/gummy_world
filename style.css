@@ -1,0 +1,253 @@
+*{
+    margin:0;
+}
+body {
+    font-family: 'Syncopate';
+    width: 100%;
+    background:url("https://github.com/seal1iren/gummy_world/blob/main/Frame%207.jpg?raw=true");
+    background-size:cover;
+    font-size:20px;
+}
+
+main{
+    padding: 20px 0px; 
+}
+
+a {
+    text-decoration: none;
+}
+
+p{
+    font-family: 'Anta';
+}
+
+h1{
+    text-align: center;
+    font-family: 'Anton';
+    font-style: normal;
+    font-size: 60px;
+    letter-spacing: 10px;
+}
+
+/*окремі заголовки*/
+
+.first_h1{
+    color: #FF7D7D;
+}
+
+.second_h1{
+    color: #8FEE72;
+    text-align: left;
+    margin-left:20px;
+}
+
+.third_h1{
+    color:#181515;
+    width: ;
+    background-color:#9ED3FF;
+}
+
+.fourty_h1{
+    color: #181515;
+}
+
+section, header{
+    display: flex;
+    align-items: center;
+    margin:auto 20px;
+}
+
+header{
+    height: 500px;
+    padding: 30px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+}
+.slogan {
+    width: 70%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.slogan h1{
+    font-family: 'Syncopate';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 45px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.slogan a{
+    background: #FF43C0;
+    box-shadow: 5px 10px 20px rgba(1, 86, 189, 0.1);
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 30px 40%;
+    color:#FFFFFF;
+    transition: 0.2s ease-in-out;
+}
+
+.slogan a:hover, .send:hover{
+    background-color: #ffffff;
+    transition: 0.2s linear;
+    border:2px solid black;
+    color: black;
+}
+
+.slogan a:focus, .send:focus{
+    background-color: #FFEB84;
+    transition: 0.2s linear;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    margin:20px 40px;
+}
+
+.about p{
+    width: 400px;
+    text-align: justify;
+    color:#FF8B8B;
+}
+
+/*асортимент*/
+
+.assor p{
+    font-size:15px;
+    text-align: center;
+}
+
+.assor img{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.container article img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+/*кожен блок окремо, йоу*/
+
+.container {
+  position: relative;
+  width: 80%;
+  height: 600px; /* Залежно від висоти всіх елементів */
+  margin: auto;
+}
+
+.item {
+  width: 120px;
+  height: 140px; /* Додали місце для тексту */
+  border-radius: 15px;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.item span {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Вручну задаємо координати для хвилеподібного розташування */
+.item:nth-child(1) { top: 10%; left: 10%; }
+.item:nth-child(2) { top: 20%; left: 30%; }
+.item:nth-child(3) { top: 30%; left: 50%; }
+.item:nth-child(4) { top: 40%; left: 70%; }
+.item:nth-child(5) { top: 80%; left: 80%; }
+.item:nth-child(6) { top: 70%; left: 60%; }
+.item:nth-child(7) { top: 60%; left: 40%; }
+.item:nth-child(8) { top: 50%; left: 20%; }
+
+
+/*чому ми?*/
+
+.reasons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.reason img{
+    border-radius: 100%;
+}
+
+/*форма зз*/
+
+.forma{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:0 auto;
+}
+
+.row, .row_big{
+    width: 400px;
+    padding: 15px;
+    margin:15px;
+    border-radius: 10px;
+    border:1px solid blue;
+}
+
+.row_big{
+    height: 150px;
+}
+
+.send{
+    margin:0 auto;
+    background: #5A1077;
+    box-shadow: 5px 10px 20px 10px rgba(68, 68, 68, 0.1);
+    border-radius: 25px;
+    padding:20px;
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+/*підвал*/
+
+footer{
+    background-color: #FF43C0;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer a{
+    font-family: 'Righteous';
+    font-size: 20px;
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+footer a:hover{
+    color:#41002b;
+}
